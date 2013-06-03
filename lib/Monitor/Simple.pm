@@ -155,7 +155,7 @@ sub check_services {
     INFO ('--- Checking finished [' . (time() - $start_time) . ' s] ---');
 }
 
-
+=pod
 
 =head1 SYNOPSIS
 
@@ -1146,18 +1146,10 @@ addresses (may be empty for some notifiers). It uses logging options
 (if any found in $args) to set the logging system. Read about possible
 arguments in $args in L<"Notifiers">.
 
-
-=head1 AUTHOR
-
-Martin Senger, C<< <martin.senger at gmail.com> >>
-
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-monitor-simple at
-rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Monitor-Simple>.  I
-will be notified, and then you'll automatically be notified of
-progress on your bug as I make changes.
+Please report any bugs or feature requests to
+L<http://github.com/msenger/Monitor-Simple/issues>.
 
 =head2 Known bugs and limitations
 
@@ -1176,34 +1168,12 @@ Similarly, log files are not using any locking.
 
 =back
 
-=head1 SUPPORT
+=head1 ACKNOWLEDGMENT
 
-You can find documentation for this module with the perldoc command.
-
-    perldoc Monitor::Simple
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Monitor-Simple>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Monitor-Simple>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Monitor-Simple>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Monitor-Simple/>
-
-=back
+Thanks to Gisbert W. Selke C<< <gws@cpan.org> >> the tests should be
+now working also under Windows. He also provided a new version of the
+C<check_mem.pl> - under the name I<check_mem2.pl> - a plugin, that
+should work both under Windows and Unix.
 
 =cut
 
