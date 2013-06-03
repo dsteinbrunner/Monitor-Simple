@@ -1,0 +1,47 @@
+<smon>
+
+  <general>
+    <notifier command="copy-to-file" on="all" format="tsv">
+      <args>
+        <!--        <arg>-login</arg> <arg>senger@allele.cbrc.kaust.edu.sa</arg> -->
+        <arg>-file</arg>  <arg>testing-simple-monitor</arg>
+      </args>
+    </notifier>
+  </general>
+
+  <services>
+
+    <service id="date01" name="Current timestamp 01">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date02" name="Current timestamp 03">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date03" name="Current timestamp 03">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date04" name="Current timestamp 04">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date05" name="Current timestamp 05">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date06" name="Current timestamp 06">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date07" name="Current timestamp 07">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date08" name="Current timestamp 08">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date09" name="Current timestamp 09">
+      <plugin command="get-date.pl"/>
+    </service>
+    <service id="date10" name="Current timestamp 10">
+      <plugin command="get-date.pl"/>
+    </service>
+
+  </services>
+
+</smon>
